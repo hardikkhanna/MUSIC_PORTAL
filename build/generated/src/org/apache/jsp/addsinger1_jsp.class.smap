@@ -1,0 +1,18 @@
+SMAP
+addsinger1_jsp.java
+JSP
+*S JSP
+*F
++ 0 addsinger1.jsp
+addsinger1.jsp
++ 1 DbConnect.jsp
+DbConnect.jsp
+*L
+1,9:66
+1#1:74
+3,13:76
+15,2:89
+9#0,10:91
+18,2:101
+20,88:104
+*E
