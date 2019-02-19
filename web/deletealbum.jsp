@@ -1,4 +1,5 @@
 <%@include file="DbConnect.jsp"%>
+
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,7 +10,7 @@
 
 
 </head>
-<div  class="jumbotron"><h1>Welcome  To E-Music website</h1>
+<div  class="jumbotron"><h1>Welcome  To ADMIN portal</h1>
 
     </div>
 <div class="container">
@@ -20,7 +21,7 @@
             <div class="main-box clearfix">
                 <div class="main-box-header clearfix">
                     <h1>
-                    Singer List
+                    ALBUM List
                     </h1>
                 </div>
                 <div class="main-box-body clearfix">
@@ -28,12 +29,9 @@
                         <table class="table table-hover" border="1" cellspacing="0" >
                             <thead>
                                     <tr>
-                                            <th><span>Singer ID</span></th>
-                                            <th><span>Singer Name</span></th>
-                                            <th><span>Phone</span></th>
-                                            <th><span>Location</span></th>
-                                            <th><span>Email</span></th>
-                                            <th><span>Image</span></th>
+                                            <th><span>ALBUM ID</span></th>
+                                            <th><span>SINGER ID</span></th>
+                                            <th><span>ALBUM NAME</span></th>
                                             <th><span>Delete</span></th>
 
                                     </tr>
@@ -44,18 +42,16 @@
                                 rs = s.executeQuery("select * from album ");
                                 while (rs.next())
                                     {
-                                    String uname= (String) rs.getString("sid");
-                                    String uid = rs.getString("sname");
+                                    String uname= (String) rs.getString("aid");
+                                    String uid = rs.getString("sid");
                                     %>
                                     <tr>
                                     <td><%=uname%></td>
                                     <td><%=uid%></td>
-                                    <td><%=rs.getString("phone")%></td>
-                                    <td><%=rs.getString("loc")%></td>
-                                    <td><%=rs.getString("email")%></td>
-                                    <td><%=rs.getString("image")%></td>
+                                    <td><%=rs.getString("aname")%></td>
+                                    
                                     <td>
-                                    <a href="deletesinger1.jsp?user=<%=uname%>">Delete</a>
+                                    <a href="deletealbum1.jsp?user=<%=uname%>">Delete</a>
                                     </td>
                                     </tr>
 
@@ -68,6 +64,6 @@
 
                 </div>
                 </div>
-           
+
     </div>
 </div>

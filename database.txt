@@ -1,0 +1,12 @@
+/*
+USE these commands in your database to create table for the databse .
+These commands are for My SQl server.
+If you are using any other server for database you can refer to commands for that server.*/
+create table login(username varchar(255),password(255));
+create table singer(sid varchar(255),sname varchar(255),phone varchar(255),loc varchar(255),email varchar(255),image varchar(255),
+primary key(sid));
+create table album(aid varchar(255),sid varchar(255),aname varchar(255),primary key(aid),foreign key(sid) references singer(sid));
+create table song(songid varchar(255),aid varchar(255),sgname(varchar(255),foreign key (aid)references album(aid));
+/* You can insert values in album table only*/
+/*Command to insert values in album table*/
+insert into album values("1","1","album 1");
