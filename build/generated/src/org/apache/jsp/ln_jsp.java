@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ln_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -53,15 +53,24 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\n");
       out.write("<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\n");
       out.write("<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n");
+      out.write("<!------ Include the above in your HEAD tag ---------->\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("\t<title>Login Page</title>\n");
+      out.write("   <!--Made with love by Mutiullah Samim -->\n");
+      out.write("   \n");
+      out.write("\t<!--Bootsrap 4 CDN-->\n");
       out.write("\t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n");
       out.write("\n");
+      out.write("    <!--Fontawesome CDN-->\n");
       out.write("\t<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.3.1/css/all.css\" integrity=\"sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU\" crossorigin=\"anonymous\">\n");
       out.write("\n");
-      out.write("\n");
+      out.write("\t\n");
       out.write("        <style>\n");
+      out.write("            /* Made with love by Mutiullah Samim*/\n");
+      out.write("\n");
       out.write("@import url('https://fonts.googleapis.com/css?family=Numans');\n");
       out.write("\n");
       out.write("html,body{\n");
@@ -152,7 +161,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<div class=\"card\">\n");
       out.write("\t\t\t<div class=\"card-header\">\n");
       out.write("\t\t\t\t<h3>Sign In</h3>\n");
-      out.write("\n");
+      out.write("\t\t\t\t\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"card-body\">\n");
       out.write("\t\t\t\t<form>\n");
