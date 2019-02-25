@@ -1,3 +1,8 @@
+<link  rel="stylesheet" href="bootstrap.min.css">
+ <div  class="jumbotron"><h1>Welcome  To E-Music website</h1>
+
+    </div>
+
 <head>
     <style>
         body{
@@ -62,13 +67,52 @@ f.submit();
         }
         </script>
 </head><body>
-<form action="addsinger1.jsp" name="f"  enctype="multipart/form-data"  method="post">
-    ENTER SINGER ID : <input type="number" name="t1"><br>
-    ENTER SINGER NAME : <input type="text" name="t2"><br>
-    ENTER SINGER NUMBER : <input type="number" name="t3" minlength="10" ><br>
-    ENTER SINGER LOCATION <input type="text" name="t4"><br>
-    ENTER SINGER EMAIl :<input type="email" name="t5"><br>
-    SINGER PROFILE PHOTO :<input type="file" name="t6"><br>
-    <button type="button" name="t7" onclick="valid()" >ADD</button>
-   <a href="admin1.jsp" >BACK</a>
-</form></body>
+<div class="container">
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="main-box clearfix">
+                <div class="main-box-header clearfix">
+                    <h1>
+                    ADD SONGS
+                    </h1>
+                </div>
+                <div class="main-box-body clearfix">
+
+                        <form role="form" action="BackEndEntry1.jsp" method="post" name='f'  enctype="multipart/form-data">
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Singer ID</label>
+                            <input name="t1" size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Singer name</label>
+                            <input name="t2"  size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Enter singer number</label>
+                            <input name="t3"  size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputPassword1">Enter singer location</label>
+                            <input type= name="t4" size="20" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputPassword1">Enter singer email</label>
+                            <input type= name="t5" size="20" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+                            <div class="form-group">
+                            <label for="exampleInputPassword1">Profile Picture</label>
+                            <input type="file" name="t6" />
+                            </div>
+
+                            <div class="form-group">
+                            <div >
+                            <button type="button" class="btn btn-success"  onclick="valid()">ADD SONG</button>
+                            </div>
+                            </div>
+                         </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
