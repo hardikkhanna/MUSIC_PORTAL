@@ -1,3 +1,8 @@
+<link  rel="stylesheet" href="bootstrap.min.css">
+ <div  class="jumbotron"><h1>Welcome  To E-Music website</h1>
+
+    </div>
+
 <script>
     function valid(){
         if(f.t1.value==""){
@@ -24,11 +29,42 @@
     }
     </script>
 <body>
-    <form action="addsong1.jsp" name="f" enctype="multipart/form-data"  method="post">
-        Enter Song id<input type="number" name="t1"><br>
-        Enter ALBUM id<input type="number" name="t2"><br>
-        SONG <input type="file" name="t3"><br>
-        <input type="button" value="ADD" name="t4" onclick="valid()">
-        <a href="admin1.jsp" >BACK</a>
-    </form>
+    <div class="container">
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="main-box clearfix">
+                <div class="main-box-header clearfix">
+                    <h1>
+                    ADD Album
+                    </h1>
+                </div>
+                <div class="main-box-body clearfix">
+
+                        <form role="form" action="addalbum1.jsp" method="post" name='f'  enctype="multipart/form-data">
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Song ID</label>
+                            <input name="t1" size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Album ID</label>
+                            <input name="t2"  size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Upload Song</label>
+                            <input name="t3"  size="20" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+
+
+                            <div class="form-group">
+                            <div >
+                            <button type="button" class="btn btn-success"  onclick="valid()" name="t4"">ADD SONG</button>
+                            <a href="admin1.jsp">BACK</a>
+                            </div>
+                            </div>
+                         </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>

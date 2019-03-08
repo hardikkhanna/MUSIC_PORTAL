@@ -41,7 +41,7 @@
                             <tbody>
                                 <%
                                 ResultSet rs ;
-                                rs = s.executeQuery("select * from album ");
+                                rs = s.executeQuery("select * from singer ");
                                 while (rs.next())
                                     {
                                     String uname= (String) rs.getString("sid");
